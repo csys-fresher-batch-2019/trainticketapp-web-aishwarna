@@ -23,7 +23,7 @@ public class AddBookingServlet extends HttpServlet {
 	    bd.setTravel_date(java.sql.Date.valueOf(request.getParameter("travel_date")));
 	    bd.AddBookingDetail(bd);	
 	    System.out.println("inserted servlet:" + bd);
-	   response.sendRedirect("DisplayTrainDetails.jsp");
+	   response.sendRedirect("reserved.jsp");
 	}
 	
 	}
